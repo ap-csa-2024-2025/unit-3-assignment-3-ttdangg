@@ -24,25 +24,48 @@ public class Main
     }
 
     // TODO: Problem 2
-    // System.out.println("Enter two integers: ");
-    // int a = sc.nextInt();
-    // int b = sc.nextInt();
+    System.out.println("Enter two integers: ");
+    int a = sc.nextInt();
+    int b = sc.nextInt();
 
-    // if (b==0)
-    // {
-    //   System.out.println("Division error");
-    // }
-    // else
-    // {
-    //   if (a%b == 0)
-    //   {
-    //   System.out.println("Is a factor");
-    //   }
-    // }
+    if (b==0)
+    {
+      System.out.println("Division error");
+    }
+    else
+    {
+      if (a%b == 0)
+      {
+      System.out.println("Is a factor");
+      }
+    }
     
 
     // TODO: Problem 3
-    System.out.println("");
+    System.out.println("Enter a number in the fifties: ");
+    int num = sc.nextInt();
+
+    if (num<50 || num>59)
+    {
+      num=55;
+      System.out.println("That's not in the fifties!");
+      System.out.println("Your number is" + " " + num);
+
+    }
+    else
+    {
+      System.out.println("Your number is "+ "" + num);
+    }
+
+    // Problem 4
+    System.out.println("Enter 2 integers: ");
+    int x = sc.nextInt();
+    int y = sc.nextInt();
+
+    if (y<=9 || (!(x<=2) && ((x*y)>10)))
+    {
+      System.out.println("Pass");
+    }
 
 
 
